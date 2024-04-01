@@ -114,10 +114,24 @@ Task-9
 Пусть дан список чисел. Оставить только положительные числа, 
 используя filter.
 """
+# from random import randint
+
+
+# numbers = [randint(-10, 10) for x in range(1, 10)]
+# print(numbers)
+
+# print(list(filter(lambda x: x > 0, numbers)))
+
+
+"""
+Task-10
+Преобразовать список целых чисел в строки:
+Пусть дан список чисел. Преобразовать каждое число в строку, используя map.
+"""
+
 from random import randint
 
-
-numbers = [randint(-10, 10) for x in range(1, 10)]
+numbers = [randint(1, 10) for x in range(1, 10)]
 print(numbers)
 
-print(list(filter(lambda x: x > 0, numbers)))
+print(list(map(lambda x: str(x), numbers)))
