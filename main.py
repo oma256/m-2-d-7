@@ -93,3 +93,31 @@ Task-7
 
 # print(list(filter(lambda x: len(x) > 5, strings)))
 
+"""
+Task-8
+Найти произведение элементов списка:
+Пусть дан список чисел. Найти произведение всех элементов списка, 
+используя reduce.
+"""
+# from random import randint
+# from functools import reduce
+
+
+# numbers = [randint(1, 10) for x in range(1, 4)]
+# print(numbers)
+# print(reduce(lambda x, y: x * y, numbers))
+
+
+"""
+Task-9
+Оставить только положительные числа в списке:
+Пусть дан список чисел. Оставить только положительные числа, 
+используя filter.
+"""
+from random import randint
+
+
+numbers = [randint(-10, 10) for x in range(1, 10)]
+print(numbers)
+
+print(list(filter(lambda x: x > 0, numbers)))
