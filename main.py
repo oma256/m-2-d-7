@@ -51,8 +51,45 @@ Task - 4
 Пусть дан список чисел. Удвоить каждое число в списке, используя map.
 """
 
-from random import randint
+# from random import randint
 
-numbers = [randint(1, 101) for x in range(1, 20)]
-print(numbers)
-print(list(map(lambda x: x * 2, numbers)))
+# numbers = [randint(1, 101) for x in range(1, 20)]
+# print(numbers)
+# print(list(map(lambda x: x * 2, numbers)))
+
+
+"""
+Task - 5
+Отфильтровать четные числа из списка:
+Пусть дан список чисел. Отфильтровать только четные числа из списка, 
+используя filter.
+
+Решали
+"""
+
+"""
+Task - 6
+Найти сумму квадратов чисел в списке:
+Пусть дан список чисел. Найти сумму квадратов чисел в списке, 
+используя reduce.
+"""
+# from random import randint
+# from functools import reduce
+
+# numbers = [randint(1, 3) for x in range(1, 5)]
+# print(numbers)
+# result = reduce(lambda x, y: x + y**2, numbers)
+# print(result)
+
+
+"""
+Task-7
+Отфильтровать слова по длине:
+Пусть дан список строк. Отфильтровать только те строки, 
+которые имеют длину больше 5 символов, используя filter.
+"""
+
+# strings = ['apple', 'banana', 'cherry', 'grape', 'watermelon']
+
+# print(list(filter(lambda x: len(x) > 5, strings)))
+
