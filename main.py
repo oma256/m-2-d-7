@@ -23,7 +23,25 @@
 и возведите в третью степень каждую цифру отфильтрованного списка.
 """
 
-numbers = [4, 3, 6, 8, 9, 7, 1, 2, 34, 5, 56, 76]
-numbers = filter(lambda x: x % 2 == 0, numbers)
-numbers = list(map(lambda x: pow(x, 3), numbers))
+# numbers = [4, 3, 6, 8, 9, 7, 1, 2, 34, 5, 56, 76]
+# numbers = filter(lambda x: x % 2 == 0, numbers)
+# numbers = list(map(lambda x: pow(x, 3), numbers))
+# print(numbers)
+
+
+"""
+3) Task
+"""
+
+"""
+Вычислите сумму элементов списка [34, 5, 23, 68, 56, 890, 123, 564], 
+но перед этим отфильтровать только нечетные числа.
+"""
+
+from functools import reduce
+
+
+numbers = [34, 5, 23, 68, 56, 890, 123, 564]
+numbers = reduce(lambda x, y: x + y, filter(lambda x: x % 2 != 0, numbers))
+
 print(numbers)
