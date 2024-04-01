@@ -129,9 +129,23 @@ Task-10
 Пусть дан список чисел. Преобразовать каждое число в строку, используя map.
 """
 
+# from random import randint
+
+# numbers = [randint(1, 10) for x in range(1, 10)]
+# print(numbers)
+
+# print(list(map(lambda x: str(x), numbers)))
+
+
+"""
+Task-11
+Отфильтровать числа по принадлежности к интервалу:
+Пусть дан список чисел. Отфильтровать только те числа, 
+которые находятся в интервале от 10 до 20, используя filter.
+"""
+
 from random import randint
 
-numbers = [randint(1, 10) for x in range(1, 10)]
+numbers = [randint(1, 30) for x in range(1, 10)]
 print(numbers)
-
-print(list(map(lambda x: str(x), numbers)))
+print(list(filter(lambda x: 10 <= x < 20, numbers)))
